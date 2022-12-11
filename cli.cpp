@@ -23,7 +23,7 @@ int viewLibrary(){
     return userChoice;
 }
 
-int addBook(){
+int viewAddBook(){
     int userChoice;
 	
 	std::cout << "Welcome to myLibrary!\n========================\nType 0 to exit\n";

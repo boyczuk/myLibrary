@@ -3,7 +3,8 @@
 #include <iostream>
 #include "functions.h"
 
-int main(void)
+
+int mainmen(void)
 {
 	int userChoice;
 	
@@ -18,7 +19,8 @@ int main(void)
 		else if (userChoice == 1)
 		{
 			// Add Book
-			userChoice = addBook();
+			userChoice = viewAddBook();
+			// Find a better way to keep menu
 
 		}
 		else if (userChoice == 0)

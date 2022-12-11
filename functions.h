@@ -3,6 +3,6 @@
 
 int mainMenu();
 int viewLibrary();
-int addBook();
+int viewAddBook();
 
 #endif
