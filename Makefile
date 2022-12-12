@@ -10,6 +10,3 @@ models.o : models.cpp functions.h
 
 cli.o : cli.cpp functions.h
 	g++ -c cli.cpp
-	
-clean :
-	rm -f main.o models.o cli.o

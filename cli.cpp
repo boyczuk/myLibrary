@@ -1,35 +1,44 @@
-#include<cstdlib>
-#include<iostream>
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <stdlib.h>
 #include "functions.h"
 
-int mainMenu(){
-	int userChoice;
-	
-	std::cout << "Welcome to myLibrary!\n========================\nType...\n2. View library\n1. Add book\n0. Exit\n";
-	std::cin >> userChoice;
-	std::cout << "\nYour choice: " << userChoice << "\n";
-    
-    return userChoice;
+using namespace std;
+
+int viewLibrary()
+{
+	cout << "View Library Page" << endl;
+
+	return 0;
 }
 
-int viewLibrary(){
-    int userChoice;
-	
-	std::cout << "Library\n========================\nType 0 to exit\n";
-	std::cout << "Book example 1\n";
-    std::cin >> userChoice;
-	
-    
-    return userChoice;
-}
+int viewAddBook()
+{
+	string title;
+	string author;
+	string genre;
+	string description;
+	string date;
 
-int viewAddBook(){
-    int userChoice;
+	cout << "Add Book Page" << endl;
+	cout << "Title: ";
+	cin.ignore();
+	getline(cin, title);
 	
-	std::cout << "Welcome to myLibrary!\n========================\nType 0 to exit\n";
-	std::cout << "Space to add query\n";
-    std::cin >> userChoice;
-	
-    
-    return userChoice;
+	cout << "Author: ";
+	getline(cin, author);
+
+	cout << "Genre: ";
+	getline(cin, genre);
+
+	cout << "Description: ";
+	getline(cin, description);
+
+	cout << "Date: ";
+	getline(cin, date);
+
+	addBook(title, author, genre, description, date);
+
+	return 0;
 }

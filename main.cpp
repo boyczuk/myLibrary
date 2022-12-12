@@ -3,25 +3,22 @@
 #include <iostream>
 #include "functions.h"
 
-
-int mainmen(void)
+int main(void)
 {
 	int userChoice;
-	
+
 	while (true)
 	{
-		userChoice = mainMenu();
+		std::cout << "\nWelcome to myLibrary!\n========================\nType...\n2. View library\n1. Add book\n0. Exit\n";
+		std::cin >> userChoice;
+
 		if (userChoice == 2)
 		{
-			// View Library
-			userChoice = viewLibrary();
+			viewLibrary();
 		}
 		else if (userChoice == 1)
 		{
-			// Add Book
-			userChoice = viewAddBook();
-			// Find a better way to keep menu
-
+			viewAddBook();
 		}
 		else if (userChoice == 0)
 		{
