@@ -9,16 +9,20 @@ int main(void)
 
 	while (true)
 	{
-		std::cout << "\nWelcome to myLibrary!\n========================\nType...\n2. View library\n1. Add book\n0. Exit\n";
+		std::cout << "\nWelcome to myLibrary!\n========================\nType...\n3. View library\n2. Add book\n1. Remove book\n0. Exit\n";
 		std::cin >> userChoice;
 
-		if (userChoice == 2)
+		if (userChoice == 3)
 		{
 			viewLibrary();
 		}
-		else if (userChoice == 1)
+		else if (userChoice == 2)
 		{
 			viewAddBook();
+		}
+		else if (userChoice == 1)
+		{
+			viewRemoveBook();
 		}
 		else if (userChoice == 0)
 		{
